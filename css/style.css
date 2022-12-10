@@ -1,0 +1,255 @@
+@font-face {
+  font-family: "head-font";
+  src: url("../../fonts/abdoullah-ashgar-el-kharef.ttf");
+}
+@font-face {
+  font-family: "main-font";
+  src: url("../../fonts/Mulish-Regular.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "main-font";
+}
+
+h2 {
+  font-family: "head-font";
+  color: #2D2D2D;
+}
+
+/* S T A R T   M A I N   C L A S S E S */
+.main-background {
+  background: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-div {
+  background: linear-gradient(to right, #2663DF, #758FF0);
+  width: 100%;
+  box-shadow: 0px 6px 18px 0px #9CADF2;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.button-div:hover {
+  background: linear-gradient(to right, #508aff, #9db1fc);
+  box-shadow: 0px 6px 18px 5px #dae1ff;
+}
+
+.button {
+  width: 100%;
+  background-color: transparent;
+  padding: 0 50px;
+  color: white;
+  border: none;
+  height: 60px;
+  font-size: 16px;
+  line-height: 22.4px;
+  cursor: pointer;
+}
+
+.screen-style {
+  width: 1080px;
+  background-color: rgba(245, 247, 255, 0.8509803922);
+  padding: 60px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.error {
+  width: 100%;
+  background-color: rgb(255, 204, 204);
+  padding: 8px 20px;
+  border-radius: 5px;
+  display: none;
+}
+
+/* E N D   M A I N   C L A S S E S */
+/* S T A R T   W E L C O M E   S T Y L E */
+.home .home-content .welcome-screen .welcome-item {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+.home .home-content .welcome-screen .welcome-item .welcome-text {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.home .home-content .welcome-screen .welcome-item .welcome-text h2 {
+  font-size: 56px;
+}
+.home .home-content .welcome-screen .welcome-item .welcome-text p {
+  font-size: 24px;
+  line-height: 38.4px;
+}
+@media (max-width: 768px) {
+  .home .home-content .welcome-screen {
+    height: 100vh;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home .home-content .welcome-screen .image-placeholder img {
+    width: 100%;
+  }
+  .home .home-content .welcome-screen .welcome-item {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+  }
+  .home .home-content .welcome-screen .welcome-item .welcome-text {
+    text-align: center;
+  }
+  .home .home-content .welcome-screen .welcome-item .welcome-text h2 {
+    font-size: 32px;
+    line-height: 38.4px;
+    width: 100%;
+  }
+  .home .home-content .welcome-screen .welcome-item .welcome-text p {
+    font-size: 16px;
+    line-height: 25.6px;
+    width: 100%;
+  }
+}
+
+/* E N D   W E L C O M E   S T Y L E */
+/* S T A R T   R E G I S T E R   S T Y L E */
+.register .register-content .register-screen .register-item {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.register .register-content .register-screen .register-item .register-text {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.register .register-content .register-screen .register-item .register-text h2 {
+  font-size: 42px;
+  line-height: 50.4px;
+}
+.register .register-content .register-screen .register-item .register-text p {
+  font-size: 24px;
+  line-height: 38.4px;
+  color: #1F1249;
+}
+.register .register-content .register-screen .register-item form {
+  width: 100%;
+}
+.register .register-content .register-screen .register-item form .form-content {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+.register .register-content .register-screen .register-item form .form-content .input-div {
+  padding: 8px 20px;
+  border-radius: 10px;
+  border: 1px solid #DBE3FF;
+  background-color: white;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.register .register-content .register-screen .register-item form .form-content .input-div i {
+  color: #9CADF2;
+  border-right: 1px solid #DBE3FF;
+  padding-right: 10px;
+}
+.register .register-content .register-screen .register-item form .form-content .input-div input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  line-height: 22.4px;
+  padding-left: 10px;
+}
+.register .register-content .register-screen .register-item form .form-content .input-div input::-moz-placeholder {
+  color: #3B3B3B;
+}
+.register .register-content .register-screen .register-item form .form-content .input-div input:-ms-input-placeholder {
+  color: #3B3B3B;
+}
+.register .register-content .register-screen .register-item form .form-content .input-div input::placeholder {
+  color: #3B3B3B;
+}
+@media (max-width: 768px) {
+  .register .register-content {
+    height: 100%;
+  }
+  .register .register-content .register-screen {
+    border-radius: 10px;
+    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .register .register-content .register-screen .image-placeholder img {
+    width: 100%;
+  }
+  .register .register-content .register-screen .register-item .register-text {
+    text-align: center !important;
+  }
+  .register .register-content .register-screen .register-item .register-text h2 {
+    font-size: 32px;
+    line-height: 38.4px;
+    width: 100%;
+  }
+  .register .register-content .register-screen .register-item .register-text p {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+}
+
+/* E N D   R E G I S T E R   S T Y L E */
+/* S T A R T   S U C C E S S   S T Y L E */
+.success .success-content .success-screen .success-content {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+.success .success-content .success-screen .success-content .success-text {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.success .success-content .success-screen .success-content .success-text h2 {
+  font-size: 42px;
+}
+.success .success-content .success-screen .success-content .success-text p {
+  font-size: 24px;
+  line-height: 38.4px;
+}
+@media (max-width: 768px) {
+  .success .success-content .success-screen {
+    height: 100vh;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .success .success-content .success-screen .image-placeholder img {
+    width: 100%;
+  }
+  .success .success-content .success-screen .success-content .success-text {
+    text-align: center;
+  }
+  .success .success-content .success-screen .success-content .success-text h2 {
+    font-size: 32px;
+    line-height: 38.4px;
+    width: 100%;
+  }
+  .success .success-content .success-screen .success-content .success-text span {
+    font-size: 16px;
+    line-height: 25.6px;
+    width: 100%;
+  }
+}
+
+/* E N D   S U C C E S S   S T Y L E *//*# sourceMappingURL=style.css.map */

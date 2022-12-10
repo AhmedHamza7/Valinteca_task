@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'head-font';
+    src: url('../../fonts/abdoullah-ashgar-el-kharef.ttf');
+}
+
+@font-face {
+    font-family: 'main-font';
+    src:url('../../fonts/Mulish-Regular.ttf')
+}
+
+$head-font:'head-font';
+$main-font:'main-font';
+
+$head-color:#2D2D2D;
+$main-color:#1F1249;
+$icon-color:#9CADF2;
